@@ -14,7 +14,7 @@
     <Description>With this package you can save, delete or convert your files.</Description>
     <Copyright>Copyright 2023</Copyright>
     <PackageProjectUrl></PackageProjectUrl>
-    <RepositoryUrl>https://github.com/TanerSaydam/GenericFileService</RepositoryUrl>
+    <RepositoryUrl>https://github.com/TanerSaydam/TS.FileService.NuGet.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>fileservice</PackageTags>
     <PackageReleaseNotes>Fixed Readme file.</PackageReleaseNotes>
