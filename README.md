@@ -20,6 +20,23 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 ```csharp
 builder.Services.AddFileService(builder.Environment.WebRootPath);
+If you are using layered architecture
+IoC Code
+builder.Services.AddInfrastructure(builder.Environment.WebRootPath);
+The logical thing to do is to install the package in the Domain layer and use it in the Infrastructure Layer as follows.
+
+public static class DependencyInjection
+{
+ public static IServiceCollection AddInfrastructure
+ (
+ this IServiceCollection services,
+ string webRootPath
+ )
+ {
+ services.AddFileService(webRootPath);
+ return services;
+ }
+}
 ```
 
 ## Usage
