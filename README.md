@@ -10,7 +10,7 @@ dotnet add package TS.FileService
 
 ## Integration
 IoC Configuration and Usage of FileService
-This WebAPI project manages static files (wwwroot directory) using the Nlabs.FileService package. To utilize this package, you need to perform dependency injection (DI) and provide the necessary configuration.
+This WebAPI project manages static files (wwwroot directory) using the TS.FileService package. To utilize this package, you need to perform dependency injection (DI) and provide the necessary configuration.
 
 Step 1: Adding Dependencies to IoC Container
 In your Program.cs file, use the AddFileService method to configure the IFileHostEnvironment interface. This method ensures that the necessary dependencies are registered correctly in the IoC container:
